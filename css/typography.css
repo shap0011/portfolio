@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* @font-face rule */
+/* create custom font 'Heading 1 Font' */
+@font-face {
+    font-family: 'Heading H1 Font';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/assets/fonts/raleway-semibold-webfont.woff2') format('woff2'),
+    url('/assets/fonts/croissantone-regular-webfont.woff') format('woff'),
+    url('/assets/fonts/Raleway-SemiBold.ttf') format('truetype');
+}
+
+/* style heading 'h1' */
+.start-page-heading {
+    font-family: 'Heading H1 Font';
+    font-weight: normal;
+    font-size: 3rem;
+}

@@ -1,5 +1,12 @@
+/*  CSS Document */
+@import url("typography.css");
+
+
+
+
 :root {
     --main-bg-color: #549CBE;
+    --logo-bg-color: #f05522;
 }
 
 body {
@@ -10,6 +17,16 @@ body {
 
 .logo {
     padding: 35% 0 6.5% 0;
+}
+
+.logo-bg {
+    fill:var(--logo-bg-color);
+}
+
+.start-page-heading {
+    color: var(--logo-bg-color);
+    /* stroke: white; */
+    -webkit-text-stroke: 2px white;
 }
 
 .arrow-block {
@@ -58,6 +75,10 @@ body {
     padding: 30px 0 0 0;
     background-color: rgb(0, 0, 0, .5);
     border-radius: 9% 9% 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
 }
 
 .arrow-to-hp {
@@ -71,6 +92,11 @@ body {
 
     .logo {
         padding: 30% 0 4% 0;
+    }
+
+    .start-page-heading {
+        color: white;
+        -webkit-text-stroke: 3px var(--logo-bg-color);
     }
 
     @keyframes flash__arrow {
@@ -103,6 +129,11 @@ body {
         animation-name: flash__arrow;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
+    }
+
+    .carousel-wrapper {
+        max-height: 45%;
+        overflow: hidden;
     }
 
 }
@@ -145,4 +176,33 @@ body {
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
     }
+
+    .start-page-heading {
+        text-shadow:
+        1px 1px 1px rgb(32, 59, 71, 1.00), 
+        1px 2px 1px rgba(32, 59, 71, 1.00), 
+        1px 3px 1px rgba(32, 59, 71, 1.00), 
+        1px 4px 1px rgba(32, 59, 71, 1.00), 
+        1px 5px 1px rgba(32, 59, 71, 1.00), 
+        1px 6px 1px rgba(32, 59, 71, 1.00), 
+        1px 7px 1px rgba(32, 59, 71, 1.00), 
+        1px 8px 1px rgba(32, 59, 71, 1.00), 
+        1px 9px 1px rgba(32, 59, 71, 1.00), 
+        1px 10px 1px rgba(32, 59, 71, 1.00), 
+        2px 20px 5px rgba(32, 59, 71, .4), 
+        3px 25px 10px rgba(32, 59, 71, .2), 
+        4px 30px 20px rgba(32, 59, 71, .3), 
+        5px 35px 50px rgba(32, 59, 71, .4);
+    }
+
+    img {
+        max-width: 40%;
+        margin: auto;
+    }
+
+    /* .carousel-wrapper {
+        float: none;
+        margin: 0 auto;
+    } */
+
 }
