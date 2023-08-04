@@ -3,7 +3,7 @@
 /* @font-face rule */
 /* create custom font 'Heading 1 Font' */
 @font-face {
-    font-family: 'Heading H1 Font';
+    font-family: 'Heading H1 Font', 'Heading H2 Font';
     font-weight: normal;
     font-style: normal;
     src: url('/assets/fonts/raleway-semibold-webfont.woff2') format('woff2'),
@@ -12,8 +12,15 @@
 }
 
 /* style heading 'h1' */
-.start-page-heading {
+.start-page-h1 {
     font-family: 'Heading H1 Font';
     font-weight: normal;
     font-size: 3rem;
+}
+
+/* style heading 'h2' */
+.heading-h2 {
+    font-family: 'Heading H2 Font';
+    font-weight: 900;
+    font-size: 2rem;
 }

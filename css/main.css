@@ -13,122 +13,74 @@ body {
     background-color: var(--main-bg-color);
 }
 
-/* style small screen */
+/* ************************************************************************** */
 
-.logo {
-    padding: 35% 0 6.5% 0;
-}
+/* style start page - start */
 
-.logo-bg {
-    fill:var(--logo-bg-color);
-}
+/* style small screen of start page - start */
 
-.start-page-heading {
-    color: var(--logo-bg-color);
-    /* stroke: white; */
-    -webkit-text-stroke: 2px white;
-}
-
-.arrow-block {
-    position: relative;
-    transform: rotate(45deg);
-}
-
-@keyframes flash__arrow {
-    0% {
-        border-right: 10px solid rgb(173, 173, 173);
-        border-bottom: 10px solid white;
-        top: -65px;
-        left: 205px;
+    .logo {
+        padding: 35% 0 6.5% 0;
     }
 
-    50% {
-        border-right: 10px solid rgb(104, 103, 103);
-        border-bottom: 10px solid rgb(249, 193, 193);
-        top: -80px;
-        left: 190px;
+    .logo-svg {
+        fill: var(--logo-bg-color);
     }
 
-    100% {
-        border-right: 10px solid rgb(47, 46, 46);
-        border-bottom: 10px solid rgb(253, 96, 96);
-        top: -65px;
-        left: 205px;
+    @keyframes flash__stroke {
+        0% {
+            stroke: white;
+          }
+          50% {
+            stroke: transparent;
+          }
+          100% {
+             stroke: white;
+          }
+        }
+
+
+    .logo-path {
+        /* stroke: white; */
+        stroke-width: 5px;
+        animation-name: flash__stroke;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
     }
-}
 
-.arrow {
-    position: absolute;
-    border-right: 10px solid rgb(47, 46, 46);
-    border-bottom: 10px solid rgb(253, 96, 96);
-    top: -60px;
-    left: 210px;
-    border-top: 50px solid transparent;
-    border-left: 50px solid transparent;
-    animation-name: flash__arrow;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-}
+    .start-page-h1 {
+        color: var(--logo-bg-color);
+        -webkit-text-stroke: 2px white;
+    }
 
-.carousel-wrapper {
-    text-align: center;
-    padding: 30px 0 0 0;
-    background-color: rgb(0, 0, 0, .5);
-    border-radius: 9% 9% 0 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    
-}
+    .carousel-wrapper {
+        text-align: center;
+        padding: 30px 0 0 0;
+        background-color: rgb(0, 0, 0, .5);
+        border-radius: 9% 9% 0 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 
-.arrow-to-hp {
-    margin-bottom: 30px;
-}
+    .arrow-to-hp {
+        margin-bottom: 30px;
+    }
+
+/* style small screen of start page - end */
 
 
-/* style medium screen */
+/* style medium screen of start page - start */
 
 @media screen and (max-width: 960px) and (min-width: 600px) {
 
     .logo {
-        padding: 30% 0 4% 0;
+        padding: 20% 0 4% 0;
     }
 
-    .start-page-heading {
+    .start-page-h1 {
         color: white;
         -webkit-text-stroke: 3px var(--logo-bg-color);
-    }
-
-    @keyframes flash__arrow {
-        0% {
-            border-bottom: 10px solid rgb(173, 173, 173);
-            border-left: 10px solid white;
-            top: -135px;
-            left: 520px;
-        }
-
-        50% {
-            border-bottom: 10px solid rgb(104, 103, 103);
-            border-left: 10px solid rgb(249, 193, 193);
-            top: -160px;
-            left: 540px;
-        }
-
-        100% {
-            border-bottom: 10px solid rgb(47, 46, 46);
-            border-left: 10px solid rgb(253, 96, 96);
-            top: -135px;
-            left: 520px;
-        }
-    }
-
-    .arrow {
-        position: absolute;
-        border-top: 50px solid transparent;
-        border-right: 50px solid transparent;
-        animation-name: flash__arrow;
-        animation-duration: 2.5s;
-        animation-iteration-count: infinite;
     }
 
     .carousel-wrapper {
@@ -138,71 +90,168 @@ body {
 
 }
 
-/* style large screen */
+/* style medium screen of start page - end */
+
+/* style large screen of start page - start */
 
 @media (min-width: 960px) {
 
     .logo {
-        padding: 5% 0 2% 0;
+        padding: 10% 0 3% 0;
     }
 
-    @keyframes flash__arrow {
-        0% {
-            border-top: 10px solid rgb(173, 173, 173);
-            border-right: 10px solid white;
-            top: 160px;
-            left: 530px;
-        }
-
-        50% {
-            border-top: 10px solid rgb(104, 103, 103);
-            border-right: 10px solid rgb(249, 193, 193);
-            top: 190px;
-            left: 500px;
-        }
-
-        100% {
-            border-top: 10px solid rgb(47, 46, 46);
-            border-right: 10px solid rgb(253, 96, 96);
-            top: 160px;
-            left: 530px;
-        }
-    }
-
-    .arrow {
-        border-left: 50px solid transparent;
-        border-bottom: 50px solid transparent;
-        animation-name: flash__arrow;
-        animation-duration: 2.5s;
-        animation-iteration-count: infinite;
-    }
-
-    .start-page-heading {
+    .start-page-h1 {
         text-shadow:
-        1px 1px 1px rgb(32, 59, 71, 1.00), 
-        1px 2px 1px rgba(32, 59, 71, 1.00), 
-        1px 3px 1px rgba(32, 59, 71, 1.00), 
-        1px 4px 1px rgba(32, 59, 71, 1.00), 
-        1px 5px 1px rgba(32, 59, 71, 1.00), 
-        1px 6px 1px rgba(32, 59, 71, 1.00), 
-        1px 7px 1px rgba(32, 59, 71, 1.00), 
-        1px 8px 1px rgba(32, 59, 71, 1.00), 
-        1px 9px 1px rgba(32, 59, 71, 1.00), 
-        1px 10px 1px rgba(32, 59, 71, 1.00), 
-        2px 20px 5px rgba(32, 59, 71, .4), 
-        3px 25px 10px rgba(32, 59, 71, .2), 
-        4px 30px 20px rgba(32, 59, 71, .3), 
-        5px 35px 50px rgba(32, 59, 71, .4);
+            1px 1px 1px rgb(32, 59, 71, 1.00),
+            1px 2px 1px rgba(32, 59, 71, 1.00),
+            1px 3px 1px rgba(32, 59, 71, 1.00),
+            1px 4px 1px rgba(32, 59, 71, 1.00),
+            1px 5px 1px rgba(32, 59, 71, 1.00),
+            1px 6px 1px rgba(32, 59, 71, 1.00),
+            1px 7px 1px rgba(32, 59, 71, 1.00),
+            1px 8px 1px rgba(32, 59, 71, 1.00),
+            1px 9px 1px rgba(32, 59, 71, 1.00),
+            1px 10px 1px rgba(32, 59, 71, 1.00),
+            2px 20px 5px rgba(32, 59, 71, .4),
+            3px 25px 10px rgba(32, 59, 71, .2),
+            4px 30px 20px rgba(32, 59, 71, .3),
+            5px 35px 50px rgba(32, 59, 71, .4);
     }
 
     img {
-        max-width: 40%;
+        max-width: 30%;
         margin: auto;
     }
 
-    /* .carousel-wrapper {
-        float: none;
-        margin: 0 auto;
-    } */
-
 }
+
+/* style large screen of start page - end */
+
+/* style start page - end */
+
+/* ************************************************************************** */
+
+/* style home page - start */
+
+/* style small screen of home page - start */
+
+.logo-svg {
+
+    text-shadow:3px 3px 0 rgb(32, 59, 71, 1.00);
+}
+
+.logo-path-home {
+    stroke: white;
+    stroke-width: 2px;
+}
+
+.hamburge {
+    width: 80px;
+    height: 80px;
+    fill: var(--logo-bg-color);
+    background-color: rgb(216, 209, 189, .5);
+    /* position: relative;
+    top: 50%;
+    transform: translateY(-50%); */
+    border-radius: 7px;
+    border-right: 3px solid #db9077;
+    border-bottom: 3px solid #f05522;
+    /* box-shadow: 
+    1px 1px 1px rgb(32, 59, 71, 1.00),
+    1px 2px 1px rgba(32, 59, 71, 1.00),
+    1px 3px 1px rgba(32, 59, 71, 1.00),
+    1px 4px 1px rgba(32, 59, 71, 1.00),
+    1px 5px 1px rgba(32, 59, 71, 1.00),
+    1px 6px 1px rgba(32, 59, 71, 1.00),
+    1px 7px 1px rgba(32, 59, 71, 1.00),
+    1px 8px 1px rgba(32, 59, 71, 1.00),
+    1px 9px 1px rgba(32, 59, 71, 1.00),
+    1px 10px 1px rgba(32, 59, 71, 1.00),
+    2px 20px 5px rgba(32, 59, 71, .4),
+    3px 25px 10px rgba(32, 59, 71, .2),
+    4px 30px 20px rgba(32, 59, 71, .3),
+    5px 35px 50px rgba(32, 59, 71, .4); */
+}
+
+.heading-h2 {
+    text-shadow:
+    1px 1px 1px rgb(32, 59, 71, 1.00),
+    1px 2px 1px rgba(32, 59, 71, 1.00),
+    1px 3px 1px rgba(32, 59, 71, 1.00),
+    1px 4px 1px rgba(32, 59, 71, 1.00),
+    1px 5px 1px rgba(32, 59, 71, 1.00),
+    1px 6px 1px rgba(32, 59, 71, 1.00),
+    1px 7px 1px rgba(32, 59, 71, 1.00),
+    1px 8px 1px rgba(32, 59, 71, 1.00),
+    1px 9px 1px rgba(32, 59, 71, 1.00),
+    1px 10px 1px rgba(32, 59, 71, 1.00),
+    2px 20px 5px rgba(32, 59, 71, .4),
+    3px 25px 10px rgba(32, 59, 71, .2),
+    4px 30px 20px rgba(32, 59, 71, .3),
+    5px 35px 50px rgba(32, 59, 71, .4);
+}
+
+
+/* style small screen of home page - end */
+
+/* style medium screen of home page - start */
+
+@media screen and (max-width: 960px) and (min-width: 600px) {}
+
+/* style medium screen of home page - end */
+
+/* style large screen of home page - start */
+
+@media screen and (max-width: 960px) and (min-width: 600px) {}
+
+/* style large screen of home page - end */
+
+/* style home page - end */
+
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+
+/* style about page - start */
+
+/* style small screen of about page - start */
+
+/* style small screen of about page - end */
+
+/* style medium screen of home page - start */
+
+@media screen and (max-width: 960px) and (min-width: 600px) {}
+
+/* style medium screen of home page - end */
+
+/* style large screen of home page - start */
+
+@media screen and (max-width: 960px) and (min-width: 600px) {}
+
+/* style large screen of home page - end */
+
+/* style about page - end */
+
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+
+/* style contact page - start */
+
+/* style small screen of contact page - start */
+
+/* style small screen of contact page - end */
+
+/* style medium screen of contact page - start */
+
+@media screen and (max-width: 960px) and (min-width: 600px) {}
+
+/* style medium screen of contact page - end */
+
+/* style large screen of contact page - start */
+
+/* style large screen of contact page - end */
+
+/* style contact page - end */
+
+/* ************************************************************************** */
