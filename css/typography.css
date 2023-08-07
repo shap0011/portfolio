@@ -1,26 +1,81 @@
 @charset "utf-8";
 
 /* @font-face rule */
-/* create custom font 'Heading 1 Font' */
+/* create custom font 'Arima Madurai' */
 @font-face {
-    font-family: 'Heading H1 Font', 'Heading H2 Font';
+    font-family: 'Arima Madurai';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/assets/fonts/arimamadurai-medium-webfont.woff2') format('woff2'),
+    url('/assets/fonts/arimamadurai-medium-webfont.woff') format('woff'),
+    url('/assets/fonts/ArimaMadurai-Medium.otf') format('opentype');
+}
+
+/* @font-face rule */
+/* create custom font 'Croissant One' */
+@font-face {
+    font-family: 'Croissant One';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/assets/fonts/croissantone-regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/croissantone-regular-webfont.woff') format('woff'),
+    url('/assets/fonts/CroissantOne-Regular.ttf') format('truetype');
+}
+
+/* @font-face rule */
+/* create custom font 'Raleway' */
+@font-face {
+    font-family: 'Raleway';
     font-weight: normal;
     font-style: normal;
     src: url('/assets/fonts/raleway-semibold-webfont.woff2') format('woff2'),
-    url('/assets/fonts/croissantone-regular-webfont.woff') format('woff'),
-    url('/assets/fonts/Raleway-SemiBold.ttf') format('truetype');
+    url('/assets/fonts/raleway-semibold-webfont.woff') format('woff'),
+    url('/assets/fonts/Raleway-SemiBold.ttf') format('opentype');
 }
 
 /* style heading 'h1' */
 .start-page-h1 {
-    font-family: 'Heading H1 Font';
+    font-family: 'Croissant One';
     font-weight: normal;
     font-size: 3rem;
 }
 
 /* style heading 'h2' */
 .heading-h2 {
-    font-family: 'Heading H2 Font';
+    font-family: 'Raleway';
     font-weight: 900;
     font-size: 2rem;
+}
+
+/* style heading 'h2' */
+.heading-h3 {
+    font-family: 'Arima Madurai';
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+
+
+/* style heading 'h5' */
+.heading-h5 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p, li
+ {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+footer p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: .95rem;
+}
+
+.social,
+.navbar a {
+    font-size: 1.8rem;
 }
