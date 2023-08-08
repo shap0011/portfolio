@@ -75,7 +75,10 @@ footer p {
     font-size: .95rem;
 }
 
-.social,
-.navbar a {
+.social {
     font-size: 1.8rem;
+}
+
+.navbar a {
+    font-size: 1.3rem;
 }
