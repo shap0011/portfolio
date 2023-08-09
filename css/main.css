@@ -110,6 +110,10 @@ footer div p a span .link__footer {
     display: none;
 }
 
+.accordion-button::after {
+    background-color: aliceblue;
+}
+
 /* style small screen - end */
 
 /* **************************************************************************** */
@@ -117,6 +121,10 @@ footer div p a span .link__footer {
 /* style medium screen - start */
 
 @media screen and (max-width: 960px) and (min-width: 600px) {
+
+    .accordion {
+        display: none;
+    }
 
     .med-car {
         display:block;
@@ -149,10 +157,6 @@ footer div p a span .link__footer {
         margin-left: unset;
     }
 
-    /* .about-history {
-        margin-bottom: 0 !important;
-    } */
-
 }
 
 /* style medium screen - end */
@@ -162,6 +166,10 @@ footer div p a span .link__footer {
 /* style large screen - start */
 
 @media (min-width: 960px) {
+
+    .accordion {
+        display: none;
+    }
 
     .large-car {
         display: block;
