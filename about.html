@@ -9,21 +9,676 @@
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- google fonts -->
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
-  <!-- main stylesheet -->
+  <script src="https://kit.fontawesome.com/e61324f647.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div class="container">
 
+  <!-- create a block 'header' with role 'header' -->
+  <header role="header">
+    <!-- add navbar 'nav' with role 'navbar' -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark bg-opacity-50 pt-4 ps-3 pe-3">
+      <div class="container-fluid">
+        <!-- add a link wich navigates to the Start Page -->
+        <div class="row">
+          <div class="col-md-1 ps-md-0 pe-md-0 col-lg-1"></div>
+          <div class="col-6 col-md-2 ps-md-0 pe-md-0 col-lg-2">
+            <a href="index.html">
+              <!-- add SVG with ID 'Website_Logo' -->
+              <svg id="Website_Logo" data-name="Website Logo" class="logo-svg w-100" viewBox="0 0 328 112">
+                <path id="Rectangle_2" data-name="Rectangle 2" class="logo-path-home"
+                  d="M0,0H301a26,26,0,0,1,26,26v86a0,0,0,0,1,0,0H26A26,26,0,0,1,0,86V0A0,0,0,0,1,0,0Z"
+                  transform="translate(1)" />
+                <text id="Code_Art" data-name="Code Art" transform="translate(0 78)" fill="#fff" font-size="86"
+                  font-family="EdwardianScriptITC, Edwardian Script ITC">
+                  <tspan x="0" y="0">Code Art</tspan>
+                </text>
+              </svg>
+            </a>
+          </div>
+          <div class="col-6 col-md-9 pe-md-0 col-lg-7 text-end my-auto">
+            <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                  <a class="link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover active ps-5 pe-5 ps-md-3 pe-md-4 fs-md-6 ms-lg-5"
+                    href="home.html">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-toggle link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover pe-4"
+                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark opacity-75">
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="index.html">Meet the Team</a></li>
+                    <li>
+                      <hr class="dropdown-divider border-light">
+                    </li>
+                    <li><a class="dropdown-item" href="index.html">Gallery</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover pe-4"
+                    href="contact.html">
+                    Contact
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="link-warning disabled link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 opacity-50 d-md-none d-lg-block"
+                    aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class=" btn d-sm-none d-md-none d-lg-block btn-outline-warning" type="submit">Search</button>
+                <button class="btn d-lg-none d-md-block btn-outline-warning" type="submit"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="ps-md-0 pe-md-0 col-lg-1"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- create a block with class 'container' -->
+  <div class="container">
+    <main>
+      <section class="home__carousel">
+        <div class="row text-center">
+          <div class="col">
+            <h2 class="heading-h2 w-75 m-auto text-warning pt-4">Website Design & Development</h2>
+            <h2 class="heading-h2 w-75 m-auto text-light mt-4">ABOUT US</h2>
+          </div>
+        </div>
+
+        <!-- add carousel for small layout -->
+        <div class="small-car">
+          <div class="row">
+            <div class="col-12">
+              <div id="carouselHome-sm" class="carousel slide carousel-fade carousel-home mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner text-center bg-success">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col ">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                              assets/images/sizes/small/team-member-1-320_x_213.jpg 320w,
+                                              assets/images/sizes/small/team-member-1-480_x_319.jpg 480w,
+                                              assets/images/sizes/medium/team-member-1-720_x_480.jpg 720w,
+                                              assets/images/sizes/medium/team-member-1-960_x_639.jpg 960w,
+                                              assets/images/sizes/large/team-member-1-1280_x_853.jpg 1280w,
+                                              assets/images/sizes/large/team-member-1-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                                     (min-width: 960px) 50vw, 180vw" src="assets/images/teamwork.jpg"
+                              class="img__home d-block w-100" alt="Team Member">
+                            <h2>Brendan Silas</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Project Manager</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                      assets/images/sizes/small/team-member-2-320_x_213.jpg 320w,
+                                      assets/images/sizes/small/team-member-2-480_x_319.jpg 480w,
+                                      assets/images/sizes/medium/team-member-2-720_x_480.jpg 720w,
+                                      assets/images/sizes/medium/team-member-2-960_x_639.jpg 960w,
+                                      assets/images/sizes/large/team-member-2-1280_x_853.jpg 1280w,
+                                      assets/images/sizes/large/team-member-2-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                             (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Rowan Conrey</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Student</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                      assets/images/sizes/small/team-member-3-320_x_213.jpg 320w,
+                                      assets/images/sizes/small/team-member-3-480_x_319.jpg 480w,
+                                      assets/images/sizes/medium/team-member-3-720_x_480.jpg 720w,
+                                      assets/images/sizes/medium/team-member-3-960_x_639.jpg 960w,
+                                      assets/images/sizes/large/team-member-3-1280_x_853.jpg 1280w,
+                                      assets/images/sizes/large/team-member-3-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                             (min-width: 960px) 50vw, 180vw" src="assets/images/team-mates.jpg"
+                              class="img__home d-block w-100" alt="The Team Mates">
+                            <h2>Eric Tousignant</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Programmer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                      assets/images/sizes/small/team-member-4-320_x_213.jpg 320w,
+                                      assets/images/sizes/small/team-member-4-480_x_319.jpg 480w,
+                                      assets/images/sizes/medium/team-member-4-720_x_480.jpg 720w,
+                                      assets/images/sizes/medium/team-member-4-960_x_639.jpg 960w,
+                                      assets/images/sizes/large/team-member-4-1280_x_853.jpg 1280w,
+                                      assets/images/sizes/large/team-member-4-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                             (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Carolina Koren</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Graphic Designer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                        assets/images/sizes/small/team-member-5-320_x_213.jpg 320w,
+                                        assets/images/sizes/small/team-member-5-480_x_319.jpg 480w,
+                                        assets/images/sizes/medium/team-member-5-720_x_480.jpg 720w,
+                                        assets/images/sizes/medium/team-member-5-960_x_639.jpg 960w,
+                                        assets/images/sizes/large/team-member-5-1280_x_853.jpg 1280w,
+                                        assets/images/sizes/large/team-member-5-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                               (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Zoe Vaccari</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Programmer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                          assets/images/sizes/small/team-member-6-320_x_214.jpg 320w,
+                                          assets/images/sizes/small/team-member-6-480_x_321.jpg 480w,
+                                          assets/images/sizes/medium/team-member-6-720_x_481.jpg 720w,
+                                          assets/images/sizes/medium/team-member-6-960_x_642.jpg 960w,
+                                          assets/images/sizes/large/team-member-6-1280_x_857.jpg 1280w,
+                                          assets/images/sizes/large/team-member-6-1600_x_1071.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                                 (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Stephanie Urbon</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Social Media Content Creator</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome-sm"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselHome-sm"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- add carousel for medium layout -->
+        <div class="med-car">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="carouselHome-md" class="carousel slide carousel-fade carousel-home mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner text-center bg-success">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col ">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                              assets/images/sizes/small/team-member-1-320_x_213.jpg 320w,
+                                              assets/images/sizes/small/team-member-1-480_x_319.jpg 480w,
+                                              assets/images/sizes/medium/team-member-1-720_x_480.jpg 720w,
+                                              assets/images/sizes/medium/team-member-1-960_x_639.jpg 960w,
+                                              assets/images/sizes/large/team-member-1-1280_x_853.jpg 1280w,
+                                              assets/images/sizes/large/team-member-1-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                                     (min-width: 960px) 50vw, 180vw" src="assets/images/teamwork.jpg"
+                              class="img__home d-block w-100" alt="Team Member">
+                            <h2>Brendan Silas</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Project Manager</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                      assets/images/sizes/small/team-member-2-320_x_213.jpg 320w,
+                                      assets/images/sizes/small/team-member-2-480_x_319.jpg 480w,
+                                      assets/images/sizes/medium/team-member-2-720_x_480.jpg 720w,
+                                      assets/images/sizes/medium/team-member-2-960_x_639.jpg 960w,
+                                      assets/images/sizes/large/team-member-2-1280_x_853.jpg 1280w,
+                                      assets/images/sizes/large/team-member-2-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                             (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Rowan Conrey</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Student</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                      assets/images/sizes/small/team-member-3-320_x_213.jpg 320w,
+                                      assets/images/sizes/small/team-member-3-480_x_319.jpg 480w,
+                                      assets/images/sizes/medium/team-member-3-720_x_480.jpg 720w,
+                                      assets/images/sizes/medium/team-member-3-960_x_639.jpg 960w,
+                                      assets/images/sizes/large/team-member-3-1280_x_853.jpg 1280w,
+                                      assets/images/sizes/large/team-member-3-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                             (min-width: 960px) 50vw, 180vw" src="assets/images/team-mates.jpg"
+                              class="img__home d-block w-100" alt="The Team Mates">
+                            <h2>Eric Tousignant</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Programmer</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                      assets/images/sizes/small/team-member-4-320_x_213.jpg 320w,
+                                      assets/images/sizes/small/team-member-4-480_x_319.jpg 480w,
+                                      assets/images/sizes/medium/team-member-4-720_x_480.jpg 720w,
+                                      assets/images/sizes/medium/team-member-4-960_x_639.jpg 960w,
+                                      assets/images/sizes/large/team-member-4-1280_x_853.jpg 1280w,
+                                      assets/images/sizes/large/team-member-4-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                             (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Carolina Koren</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Graphic Designer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                        assets/images/sizes/small/team-member-5-320_x_213.jpg 320w,
+                                        assets/images/sizes/small/team-member-5-480_x_319.jpg 480w,
+                                        assets/images/sizes/medium/team-member-5-720_x_480.jpg 720w,
+                                        assets/images/sizes/medium/team-member-5-960_x_639.jpg 960w,
+                                        assets/images/sizes/large/team-member-5-1280_x_853.jpg 1280w,
+                                        assets/images/sizes/large/team-member-5-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                               (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Zoe Vaccari</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Programmer</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                          assets/images/sizes/small/team-member-6-320_x_214.jpg 320w,
+                                          assets/images/sizes/small/team-member-6-480_x_321.jpg 480w,
+                                          assets/images/sizes/medium/team-member-6-720_x_481.jpg 720w,
+                                          assets/images/sizes/medium/team-member-6-960_x_642.jpg 960w,
+                                          assets/images/sizes/large/team-member-6-1280_x_857.jpg 1280w,
+                                          assets/images/sizes/large/team-member-6-1600_x_1071.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                                 (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Stephanie Urbon</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Social Media Content Creator</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome-md"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselHome-md"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- add carousel for large layout -->
+        <div class="large-car">
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="carouselHome-lg" class="carousel slide carousel-fade carousel-home mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner text-center bg-success">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                              assets/images/sizes/small/team-member-1-320_x_213.jpg 320w,
+                                              assets/images/sizes/small/team-member-1-480_x_319.jpg 480w,
+                                              assets/images/sizes/medium/team-member-1-720_x_480.jpg 720w,
+                                              assets/images/sizes/medium/team-member-1-960_x_639.jpg 960w,
+                                              assets/images/sizes/large/team-member-1-1280_x_853.jpg 1280w,
+                                              assets/images/sizes/large/team-member-1-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                                     (min-width: 960px) 50vw, 180vw" src="assets/images/teamwork.jpg"
+                              class="img__home d-block w-100" alt="Team Member">
+                            <h2>Brendan Silas</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Project Manager</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                      assets/images/sizes/small/team-member-2-320_x_213.jpg 320w,
+                                      assets/images/sizes/small/team-member-2-480_x_319.jpg 480w,
+                                      assets/images/sizes/medium/team-member-2-720_x_480.jpg 720w,
+                                      assets/images/sizes/medium/team-member-2-960_x_639.jpg 960w,
+                                      assets/images/sizes/large/team-member-2-1280_x_853.jpg 1280w,
+                                      assets/images/sizes/large/team-member-2-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                             (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Rowan Conrey</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Student</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                      assets/images/sizes/small/team-member-3-320_x_213.jpg 320w,
+                                      assets/images/sizes/small/team-member-3-480_x_319.jpg 480w,
+                                      assets/images/sizes/medium/team-member-3-720_x_480.jpg 720w,
+                                      assets/images/sizes/medium/team-member-3-960_x_639.jpg 960w,
+                                      assets/images/sizes/large/team-member-3-1280_x_853.jpg 1280w,
+                                      assets/images/sizes/large/team-member-3-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                             (min-width: 960px) 50vw, 180vw" src="assets/images/team-mates.jpg"
+                              class="img__home d-block w-100" alt="The Team Mates">
+                            <h2>Eric Tousignant</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Programmer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                      assets/images/sizes/small/team-member-4-320_x_213.jpg 320w,
+                                      assets/images/sizes/small/team-member-4-480_x_319.jpg 480w,
+                                      assets/images/sizes/medium/team-member-4-720_x_480.jpg 720w,
+                                      assets/images/sizes/medium/team-member-4-960_x_639.jpg 960w,
+                                      assets/images/sizes/large/team-member-4-1280_x_853.jpg 1280w,
+                                      assets/images/sizes/large/team-member-4-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                             (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Carolina Koren</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Graphic Designer</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                        assets/images/sizes/small/team-member-5-320_x_213.jpg 320w,
+                                        assets/images/sizes/small/team-member-5-480_x_319.jpg 480w,
+                                        assets/images/sizes/medium/team-member-5-720_x_480.jpg 720w,
+                                        assets/images/sizes/medium/team-member-5-960_x_639.jpg 960w,
+                                        assets/images/sizes/large/team-member-5-1280_x_853.jpg 1280w,
+                                        assets/images/sizes/large/team-member-5-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                               (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Zoe Vaccari</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Programmer</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <div class="box front bg-warning">
+                            <img srcset="
+                                          assets/images/sizes/small/team-member-6-320_x_214.jpg 320w,
+                                          assets/images/sizes/small/team-member-6-480_x_321.jpg 480w,
+                                          assets/images/sizes/medium/team-member-6-720_x_481.jpg 720w,
+                                          assets/images/sizes/medium/team-member-6-960_x_642.jpg 960w,
+                                          assets/images/sizes/large/team-member-6-1280_x_857.jpg 1280w,
+                                          assets/images/sizes/large/team-member-6-1600_x_1071.jpg 1600w" sizes="(min-width: 50vw) 100vw,
+                                                 (min-width: 960px) 50vw, 180vw" src="assets/images/work-on-project.jpg"
+                              class="img__home d-block w-100" alt="Work on Project">
+                            <h2>Stephanie Urbon</h2>
+                          </div>
+                          <div class="box back bg-dark text-light">Social Media Content Creator</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome-lg"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHome-lg"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="about__statements">
+        <div class="container text-center">
+          <div class="row d-lg-flex mt-lg-5">
+            <div class="d-md-flex mt-lg-0">
+              <div class="row me-md-4">
+                <div class="about-team col mb-5 mt-5 p-3 bg-light rounded-5 opacity-50">
+                  <h3 class="heading-h3 m-auto text-success">Our Team</h3>
+                  <p class="text-dark">We are a Website Design and Development team. With a wealth of experience and a
+                    shared commitment to excellence, we take great pride in delivering great solutions for our clients.
+                    Our team of experienced professionals thrives on creativity, innovation, and technical expertise,
+                    working harmoniously to transform ideas into digital experiences. Collaborating seamlessly, we
+                    embark on each project with unwavering enthusiasm, making our clients' visions a reality.</p>
+                </div>
+              </div>
+              <div class="row ms-md-4">
+                <div class="about-history col  mb-5 mt-5 p-3 bg-light rounded-5 opacity-50">
+                  <h3 class="heading-h3 m-auto text-success">Our History</h3>
+                  <p class="text-dark">From humble beginnings with just three programmers, your Website Design and
+                    Development team has grown into a flourishing enterprise in the span of five years. With unwavering
+                    dedication and a commitment to excellence, our company has expanded to three offices, and our
+                    workforce now comprises 47 skilled and passionate individuals. This impressive growth is a testament
+                    to our team's expertise, innovation, and client-focused approach. As we continue to create
+                    captivating digital experiences and push the boundaries of technology, our company remains a beacon
+                    of success, poised to leave an indelible mark on the industry for years to come.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="bg-dark bg-opacity-50 ps-3 pe-3">
+    <div class="container text-light text-center">
+      <div class="row text-center">
+        <div class="col-4 col-md-3 col-lg-3 col-xl-3 mt-3 text-md-start">
+          <span><a href="index.html">
+              <svg id="Website_Logo_Footer" data-name="Website Logo" class="logo-svg w-100" viewBox="0 0 328 112">
+                <path id="Rectangle_2_Footer" data-name="Rectangle 2 Footer" class="logo-path-home"
+                  d="M0,0H301a26,26,0,0,1,26,26v86a0,0,0,0,1,0,0H26A26,26,0,0,1,0,86V0A0,0,0,0,1,0,0Z"
+                  transform="translate(1)" />
+                <text id="Code_Art_Footer" data-name="Code Art Footer" transform="translate(0 78)" fill="#fff"
+                  font-size="86" font-family="EdwardianScriptITC, Edwardian Script ITC">
+                  <tspan x="0" y="0">Code Art</tspan>
+                </text>
+              </svg>
+            </a></span>
+        </div>
+        <div class="col-8 col-md-2 col-lg-3 col-xl-3 mt-3 text-md-start">
+          <h5 class="heading-h5 text-uppercase mb-3 text-warning">Products</h5>
+          <p>
+            <a href="#" class="text-white link__footer">UI Design</a>
+          </p>
+          <p>
+            <a href="#" class="text-white link__footer">UX Design</a>
+          </p>
+          <p>
+            <a href="#" class="text-white link__footer">Website Development</a>
+          </p>
+          <p>
+            <a href="#" class="text-white link__footer">Website Content</a>
+          </p>
+        </div>
+        <div class="col-4 col-md-3 col-lg-3 col-xl-3 mt-3 text-md-start">
+          <h5 class="heading-h5 text-uppercase mb-3 text-warning">Services</h5>
+          <p>
+            <a href="#" class="text-white link__footer">Ask Expert</a>
+          </p>
+          <p>
+            <a href="#" class="text-white link__footer">Support</a>
+          </p>
+          <p>
+            <a href="#" class="text-white link__footer">Book Appoitment</a>
+          </p>
+          <p>
+            <a href="#" class="text-white link__footer">FAQ</a>
+          </p>
+        </div>
+        <div class="col-8 col-md-4 col-lg-3 col-xl-3 mt-3 text-md-start">
+          <h5 class="heading-h5 text-uppercase mb-3 text-warning">Contact</h5>
+          <div class="row pb-2">
+            <div class="col col-md-1 p-0"><i class="fa fa-house"></i></div>
+            <div class="col-5 col-md-10 p-0 fst-italic">Ottawa, ON, 123 Antler Avenue, Canada</div>
+            <div class="col-3 col-md-1"></div>
+          </div>
+          <div class="row pb-2">
+            <div class="col col-md-1 p-0"><i class="fa fa-envelope"></i></div>
+            <div class="col-5 col-md-10 p-0 fst-italic"><a class="text-light"
+                href="mailto:webdd@codeart.ca">webdd@codeart.ca</a></div>
+            <div class="col-3 col-md-1"></div>
+          </div>
+          <div class="row pb-2">
+            <div class="col col-md-1 p-0"><i class="fa fa-phone"></i></div>
+            <div class="col-5 col-md-10 p-0 fst-italic">+1 613 123 4567</div>
+            <div class="col-3 col-md-1"></div>
+          </div>
+          <div class="row pb-2">
+            <div class="col col-md-1 p-0"><i class="fa fa-print"></i></div>
+            <div class="col-5 col-md-10 p-0 fst-italic">+1 613 213 5467</div>
+            <div class="col-3 col-md-1"></div>
+          </div>
+        </div>
+        <hr class="mb-3">
+        <div class="row align-items-center">
+          <div class="col-md-5 col-lg-8">
+            <p>Copyright &copy; <script>
+                document.write(new Date().getFullYear())
+              </script> All rights reserved by:
+              <a class="link__footer" href="#">
+                <span class="text-warning fw-semibold">OlgaDurham, AC</span>
+              </a></p>
+          </div>
+          <div class="col-md-7 col-lg-4">
+            <div class="text-center text-md-end">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/" class="social text-light opacity-75"><i
+                      class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.twitter.com/" class="social text-light opacity-75"><i
+                      class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/olga-durham-b681b8173/" class="social text-light opacity-75"><i
+                      class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.youtube.com/watch?v=7Y5hyy80y0c" class="social text-light opacity-75"><i
+                      class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://olgadurhamdesigns.com/" class="social text-light opacity-75"><i
+                      class="fa-brands fa-wordpress"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="http://drupal.olgadurhamdesigns.com/" class="social text-light opacity-75"><i
+                      class="fa-brands fa-drupal"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://shap0011-apparel.myshopify.com/" class="social text-light opacity-75"><i
+                      class="fa-brands fa-shopify"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
   </script>
+
 </body>
 
 </html>
