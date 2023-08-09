@@ -28,13 +28,14 @@
   <!-- create a block 'header' with role 'header' -->
   <header role="header">
     <!-- add navbar 'nav' with role 'navbar' -->
-    <nav id="nav" class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark bg-opacity-50 pt-4 ps-3 pe-3">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark bg-opacity-50 pt-4 ps-3 pe-3"
+      role=navigation>
       <div class="container-fluid">
         <!-- add a link wich navigates to the Start Page -->
         <div class="row">
           <div class="col-md-1 ps-md-0 pe-md-0 col-lg-1"></div>
           <div class="col-6 col-md-2 ps-md-0 pe-md-0 col-lg-2">
-            <a href="index.html">
+            <a href="index.html" role="link">
               <!-- add SVG with ID 'Website_Logo' -->
               <svg id="Website_Logo" data-name="Website Logo" class="logo-svg w-100" viewBox="0 0 328 112">
                 <path id="Rectangle_2" data-name="Rectangle 2" class="logo-path-home"
@@ -48,31 +49,31 @@
             </a>
           </div>
           <div class="col-6 col-md-9 pe-md-0 col-lg-7 text-end my-auto">
-            <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler border-white" role="button" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item ">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="menubar">
+                <li class="nav-item " role="menuitem">
                   <a class="link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover active ps-5 pe-5 ps-md-3 pe-md-4 fs-md-6 ms-lg-5"
                     href="home.html">
                     Home
                   </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" role="menuitem">
                   <a class="dropdown-toggle link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover pe-4"
-                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" role="link">
                     About
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-dark opacity-75">
-                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                    <li><a class="dropdown-item" href="index.html">Meet the Team</a></li>
-                    <li>
+                  <ul class="dropdown-menu dropdown-menu-dark opacity-75" role="menubar">
+                    <li role="menuitem"><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href="index.html">Meet the Team</a></li>
+                    <li role="menuitem">
                       <hr class="dropdown-divider border-light">
                     </li>
-                    <li><a class="dropdown-item" href="index.html">Gallery</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href="index.html">Gallery</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
