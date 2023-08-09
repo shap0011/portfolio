@@ -9,7 +9,7 @@
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- google fonts -->
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
@@ -25,18 +25,25 @@
     Large (col-lg-)         >= 992 px
     Extra Large (col-xl-)   >= 1200 px
    -->
-   <!-- create a block with class 'container-fluid' -->
+  <!-- add skip-links -->
+  <ul class="skip-links">
+    <li><a href="#nav">skip to main nav</a></li>
+    <li><a href="#main">skip to main content</a></li>
+  </ul>
+  <!-- create a block with class 'container-fluid' -->
   <div class="container-fluid">
     <!-- create a block with classes 'row' and 'logo' -->
     <div class="row logo">
       <div class="col-sm-12">
         <div class="text-center">
           <!-- add a link to Home Page -->
-          <a href="home.html" title="Home" role="link">
+          <a id="nav" href="home.html" title="Home" role="link">
             <!-- add SVG with ID 'Website_Logo' -->
-            <svg id="Website_Logo" data-name="Website Logo" class="logo-svg" width="328" height="112" viewBox="0 0 328 112">
+            <svg id="Website_Logo" data-name="Website Logo" class="logo-svg" width="328" height="112"
+              viewBox="0 0 328 112">
               <path id="Rectangle_2" data-name="Rectangle 2" class="logo-path"
-                d="M0,0H301a26,26,0,0,1,26,26v86a0,0,0,0,1,0,0H26A26,26,0,0,1,0,86V0A0,0,0,0,1,0,0Z" transform="translate(1)" />
+                d="M0,0H301a26,26,0,0,1,26,26v86a0,0,0,0,1,0,0H26A26,26,0,0,1,0,86V0A0,0,0,0,1,0,0Z"
+                transform="translate(1)" />
               <text id="Code_Art" data-name="Code Art" transform="translate(0 78)" fill="#fff" font-size="86"
                 font-family="EdwardianScriptITC, Edwardian Script ITC">
                 <tspan x="0" y="0">Code Art</tspan>
@@ -52,7 +59,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div id="main" class="row">
     <div class="col-sm-12">
       <div class="carousel-wrapper pb-lg-3">
         <a href="home.html" title="Home" role="link">
@@ -74,8 +81,8 @@
               assets/images/sizes/medium/code-web-dev-960_x_639.jpg 960w,
               assets/images/sizes/large/code-web-dev-1280_x_853.jpg 1280w,
               assets/images/sizes/large/code-web-dev-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
-                     (min-width: 960px) 50vw, 180vw" src="assets/images/code-web-dev.jpg" class="img__start d-block w-100"
-                alt="Web Development code">
+                     (min-width: 960px) 50vw, 180vw" src="assets/images/code-web-dev.jpg"
+                class="img__start d-block w-100" alt="Web Development code">
             </div>
             <div class="carousel-item">
               <img srcset="
@@ -85,8 +92,8 @@
               assets/images/sizes/medium/ux-prototype-960_x_640.jpg 960w,
               assets/images/sizes/large/ux-prototype-1280_x_853.jpg 1280w,
               assets/images/sizes/large/ux-prototype-1600_x_1067.jpg 1600w" sizes="(min-width: 50vw) 100vw,
-                     (min-width: 960px) 50vw, 180vw" src="assets/images/ux-prototype.jpg" class="img__start d-block w-100"
-                alt="UX Prototype">
+                     (min-width: 960px) 50vw, 180vw" src="assets/images/ux-prototype.jpg"
+                class="img__start d-block w-100" alt="UX Prototype">
             </div>
             <div class="carousel-item">
               <img srcset="
@@ -96,8 +103,8 @@
               assets/images/sizes/medium/ux-lo-fi-wireframe-960_x_639.jpg 960w,
               assets/images/sizes/large/ux-lo-fi-wireframe-1280_x_853.jpg 1280w,
               assets/images/sizes/large/ux-lo-fi-wireframe-1600_x_1066.jpg 1600w" sizes="(min-width: 50vw) 100vw,
-                     (min-width: 960px) 50vw, 180vw" src="assets/images/ux-lo-fi-wireframe.jpg" class="img__start d-block w-100"
-                alt="UX Lo-Fi Wireframe">
+                     (min-width: 960px) 50vw, 180vw" src="assets/images/ux-lo-fi-wireframe.jpg"
+                class="img__start d-block w-100" alt="UX Lo-Fi Wireframe">
             </div>
           </div>
         </div>
