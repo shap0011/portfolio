@@ -19,11 +19,15 @@
 </head>
 
 <body>
-
+    <!-- add skip-links -->
+    <ul class="skip-links">
+        <li><a href="#nav">skip to main nav</a></li>
+        <li><a href="#main">skip to main content</a></li>
+    </ul>
     <!-- create a block 'header' with role 'header' -->
-    <header role="header">
+    <header role="banner">
         <!-- add navbar 'nav' with role 'navbar' -->
-        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark bg-opacity-50 pt-4 ps-3 pe-3">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark bg-opacity-50 pt-4 ps-3 pe-3">
             <div class="container-fluid">
                 <!-- add a link wich navigates to the Start Page -->
                 <div class="row">
@@ -44,20 +48,20 @@
                         </a>
                     </div>
                     <div class="col-6 col-md-9 pe-md-0 col-lg-7 text-end my-auto">
-                        <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler border-white" role="button" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item ">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" role="menubar">
+                                <li class="nav-item" role="menuitem">
                                     <a class="link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover active ps-5 pe-5 ps-md-3 pe-md-4 fs-md-6 ms-lg-5"
                                         href="home.html">
                                         Home
                                     </a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown" role="menuitem">
                                     <a class="dropdown-toggle link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover pe-4"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         About
@@ -71,13 +75,13 @@
                                         <li><a class="dropdown-item" href="index.html">Gallery</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" role="menuitem">
                                     <a class="link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover pe-4"
                                         href="contact.html">
                                         Contact
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" role="menuitem">
                                     <a class="link-warning disabled link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 opacity-50 d-md-none d-lg-block"
                                         aria-disabled="true">Disabled</a>
                                 </li>
@@ -86,8 +90,8 @@
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class=" btn d-sm-none d-md-none d-lg-block btn-outline-warning"
                                     type="submit">Search</button>
-                                <button class="btn d-lg-none d-md-block btn-outline-warning" type="submit"><i
-                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <button class="btn d-lg-none d-md-block btn-outline-warning" role="button"
+                                    type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </form>
                         </div>
                     </div>
@@ -99,12 +103,13 @@
 
     <!-- create a block with class 'container' -->
     <div class="container">
-        <main>
+        <main id="main">
             <section class="home__carousel">
                 <div class="row text-center">
                     <div class="col">
-                        <h2 class="heading-h2 w-75 m-auto text-warning pt-4">Website Design & Development</h2>
-                        <h2 class="heading-h2 w-75 m-auto text-light mt-4">HOME</h2>
+                        <h2 class="heading-h2 w-75 m-auto text-warning pt-4" role="heading">Website Design & Development
+                        </h2>
+                        <h2 class="heading-h2 w-75 m-auto text-light mt-4" role="heading">HOME</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -145,13 +150,13 @@
                                         class="img__home d-block w-100" alt="The Team Mates">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome"
-                                data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" role="button"
+                                data-bs-target="#carouselHome" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome"
-                                data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" role="button"
+                                data-bs-target="#carouselHome" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -165,7 +170,7 @@
                         <div class="d-md-flex col-lg-6 mt-md-5 mt-lg-0 mb-md-5 pe-lg-4">
                             <div class="row me-md-4">
                                 <div class="col col-md-12 m-5 m-md-0 mb-0 p-3 bg-light rounded-5 bg-opacity-50">
-                                    <h3 class="heading-h3 m-auto text-success">Our Vision</h3>
+                                    <h3 class="heading-h3 m-auto text-success" role="heading">Our Vision</h3>
                                     <p class="text-dark">To become the leading website development service that
                                         empowers
                                         businesses to achieve their digital goals through innovative and personalized
@@ -174,24 +179,28 @@
                             </div>
                             <div class="row ms-md-4">
                                 <div class="col col-md-12 m-5 m-md-0 mb-0 p-3 bg-light rounded-5 bg-opacity-50">
-                                    <h3 class="heading-h3 m-auto text-success">Our Mission</h3>
+                                    <h3 class="heading-h3 m-auto text-success" role="heading">Our Mission</h3>
                                     <p class="text-dark">To help clients to organize and manage their businesses
                                         with
                                         beautiful
-                                        and modern web design and development, digital graphics, and online marketing.</p>
+                                        and modern web design and development, digital graphics, and online marketing.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="row col-lg-6 ps-lg-3 mb-md-5">
                             <div class="col col-md-12 m-5 p-3 m-md-0 bg-light rounded-5 bg-opacity-50">
-                                <h3 class="heading-h3 m-auto text-success">Our Values</h3>
-                                <ul class="list-group list-group-flush m-auto text-dark">
-                                    <li class="list-group-item">Working with clients together to achieve the best result
+                                <h3 class="heading-h3 m-auto text-success" role="heading">Our Values</h3>
+                                <ul class="list-group list-group-flush m-auto text-dark" role="menubar">
+                                    <li class="list-group-item" role="menuitem">Working with clients together to achieve
+                                        the best result
                                         for
                                         their
                                         projects</li>
-                                    <li class="list-group-item">Acting with creativity to approach problem-solving</li>
-                                    <li class="list-group-item">Teamwork to find the best way for graphic and
+                                    <li class="list-group-item" role="menuitem">Acting with creativity to approach
+                                        problem-solving</li>
+                                    <li class="list-group-item" role="menuitem">Teamwork to find the best way for
+                                        graphic and
                                         development
                                         solutions</li>
                                 </ul>
@@ -207,8 +216,8 @@
         <div class="container text-light text-center">
             <div class="row text-center">
                 <div class="col-4 col-md-3 col-lg-3 col-xl-3 mt-3 text-md-start">
-                    <span><a href="index.html">
-                        <svg id="Website_Logo_Footer" data-name="Website Logo" class="logo-svg w-100"
+                    <span><a href="index.html" role="link">
+                            <svg id="Website_Logo_Footer" data-name="Website Logo" class="logo-svg w-100"
                                 viewBox="0 0 328 112">
                                 <path id="Rectangle_2_Footer" data-name="Rectangle 2 Footer" class="logo-path-home"
                                     d="M0,0H301a26,26,0,0,1,26,26v86a0,0,0,0,1,0,0H26A26,26,0,0,1,0,86V0A0,0,0,0,1,0,0Z"
@@ -218,40 +227,40 @@
                                     <tspan x="0" y="0">Code Art</tspan>
                                 </text>
                             </svg>
-                    </a></span>
+                        </a></span>
                 </div>
                 <div class="col-8 col-md-2 col-lg-3 col-xl-3 mt-3 text-md-start">
-                    <h5 class="heading-h5 text-uppercase mb-3 text-warning">Products</h5>
+                    <h5 class="heading-h5 text-uppercase mb-3 text-warning" role="heading">Products</h5>
                     <p>
-                        <a href="#" class="text-white link__footer">UI Design</a>
+                        <a href="#" class="text-white link__footer" role="link">UI Design</a>
                     </p>
                     <p>
-                        <a href="#" class="text-white link__footer">UX Design</a>
+                        <a href="#" class="text-white link__footer" role="link">UX Design</a>
                     </p>
                     <p>
-                        <a href="#" class="text-white link__footer">Website Development</a>
+                        <a href="#" class="text-white link__footer" role="link">Website Development</a>
                     </p>
                     <p>
-                        <a href="#" class="text-white link__footer">Website Content</a>
+                        <a href="#" class="text-white link__footer" role="link">Website Content</a>
                     </p>
                 </div>
                 <div class="col-4 col-md-3 col-lg-3 col-xl-3 mt-3 text-md-start">
-                    <h5 class="heading-h5 text-uppercase mb-3 text-warning">Services</h5>
+                    <h5 class="heading-h5 text-uppercase mb-3 text-warning" role="heading">Services</h5>
                     <p>
-                        <a href="#" class="text-white link__footer">Ask Expert</a>
+                        <a href="#" class="text-white link__footer" role="link">Ask Expert</a>
                     </p>
                     <p>
-                        <a href="#" class="text-white link__footer">Support</a>
+                        <a href="#" class="text-white link__footer" role="link">Support</a>
                     </p>
                     <p>
-                        <a href="#" class="text-white link__footer">Book Appoitment</a>
+                        <a href="#" class="text-white link__footer" role="link">Book Appoitment</a>
                     </p>
                     <p>
-                        <a href="#" class="text-white link__footer">FAQ</a>
+                        <a href="#" class="text-white link__footer" role="link">FAQ</a>
                     </p>
                 </div>
                 <div class="col-8 col-md-4 col-lg-3 col-xl-3 mt-3 text-md-start">
-                    <h5 class="heading-h5 text-uppercase mb-3 text-warning">Contact</h5>
+                    <h5 class="heading-h5 text-uppercase mb-3 text-warning" role="heading">Contact</h5>
                     <div class="row pb-2">
                         <div class="col col-md-1 p-0"><i class="fa fa-house"></i></div>
                         <div class="col-5 col-md-10 p-0 fst-italic">Ottawa, ON, 123 Antler Avenue, Canada</div>
@@ -280,38 +289,38 @@
                         <p>Copyright &copy; <script>
                                 document.write(new Date().getFullYear())
                             </script> All rights reserved by:
-                            <a class="link__footer" href="#">
+                            <a class="link__footer" href="#" role="link">
                                 <span class="text-warning fw-semibold">OlgaDurham, AC</span>
                             </a></p>
                     </div>
                     <div class="col-md-7 col-lg-4">
                         <div class="text-center text-md-end">
-                            <ul class="list-unstyled list-inline">
-                                <li class="list-inline-item">
+                            <ul class="list-unstyled list-inline" role="menubar">
+                                <li class="list-inline-item" role="menuitem">
                                     <a href="https://www.facebook.com/" class="social text-light opacity-75"><i
                                             class="fa-brands fa-facebook"></i></a>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item" role="menuitem">
                                     <a href="https://www.twitter.com/" class="social text-light opacity-75"><i
                                             class="fa-brands fa-twitter"></i></a>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item" role="menuitem">
                                     <a href="https://www.linkedin.com/in/olga-durham-b681b8173/"
                                         class="social text-light opacity-75"><i class="fa-brands fa-linkedin"></i></a>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item" role="menuitem">
                                     <a href="https://www.youtube.com/watch?v=7Y5hyy80y0c"
                                         class="social text-light opacity-75"><i class="fa-brands fa-youtube"></i></a>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item" role="menuitem">
                                     <a href="https://olgadurhamdesigns.com/" class="social text-light opacity-75"><i
                                             class="fa-brands fa-wordpress"></i></a>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item" role="menuitem">
                                     <a href="http://drupal.olgadurhamdesigns.com/"
                                         class="social text-light opacity-75"><i class="fa-brands fa-drupal"></i></a>
                                 </li>
-                                <li class="list-inline-item">
+                                <li class="list-inline-item" role="menuitem">
                                     <a href="https://shap0011-apparel.myshopify.com/"
                                         class="social text-light opacity-75"><i class="fa-brands fa-shopify"></i></a>
                                 </li>
